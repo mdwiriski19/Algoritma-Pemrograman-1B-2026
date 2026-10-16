@@ -1,0 +1,4 @@
+disini memiliki variable tiket dan di dalam nya ada reguler dengan harga 40.000 dan vip 75.000 dan vvip 100.000 dengan harga yang bebeda
+kemudian ada ada perintah perulangan si pelanggan memilih tiket 
+
+DISINI BELUM SELESIA SEMUA
