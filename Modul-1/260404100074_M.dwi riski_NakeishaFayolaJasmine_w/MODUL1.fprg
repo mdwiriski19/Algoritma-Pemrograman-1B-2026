@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="hasilflowgrothm"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-02 10:52:40 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtM0gzTFBJTjY7MjAyNi0wOS0yNjswNzozMTo1NiBQTTsyNjUz"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtM0gzTFBJTjY7MjAyNi0xMC0wMjsxMDo1Mjo0MCBQTTs0OzI3NDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="buku, pulpen, flashdisk, total, diskontoko, setelahdiskon, pajak, uangBayar, uangKembali" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan Jumlah Buku&quot;" newline="True"/>
+            <input variable="buku"/>
+            <assign variable="buku" expression="buku * 25000"/>
+            <output expression="&quot;Masukkan Jumlah Pulpen&quot;" newline="True"/>
+            <input variable="pulpen"/>
+            <assign variable="pulpen" expression="pulpen * 8000"/>
+            <output expression="&quot;Masukkan Jumlah Flashdisk&quot;" newline="True"/>
+            <input variable="flashdisk"/>
+            <assign variable="flashdisk" expression="flashdisk * 75000"/>
+            <assign variable="total" expression="buku + pulpen + flashdisk"/>
+            <output expression="&quot;Total Harga Yang Di Beli&quot;" newline="True"/>
+            <output expression="total" newline="True"/>
+            <output expression="&quot;Toko sedang ada diskon 10%&quot;" newline="True"/>
+            <assign variable="diskontoko" expression="total * 10 /100"/>
+            <output expression="total-diskontoko" newline="True"/>
+            <assign variable="setelahdiskon" expression="total-diskontoko"/>
+            <output expression="&quot;jangan Lupa Pajak Nya 11%&quot;" newline="True"/>
+            <assign variable="pajak" expression="setelahdiskon * 11 / 100"/>
+            <output expression="pajak" newline="True"/>
+            <assign variable="pajak" expression="pajak + setelahdiskon"/>
+            <output expression="&quot;Hasil Setelah Di Tambah Pajak&quot;" newline="True"/>
+            <output expression="pajak" newline="True"/>
+            <output expression="&quot;Masukkan Duit Udin&quot;" newline="True"/>
+            <input variable="uangBayar"/>
+            <assign variable="uangKembali" expression="uangBayar-pajak"/>
+            <output expression="&quot;SISA UANG UDIN&quot;" newline="True"/>
+            <output expression="uangkembali" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
